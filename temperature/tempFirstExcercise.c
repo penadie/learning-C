@@ -1,9 +1,8 @@
 #include <stdio.h>
-/* copipaste example base for exercises */
 // print table from 0 to 300 jumping by 20
 // fahrenheit-celsius table
 
-main() {
+int main() {
 	float fahr, celsius;		// defining temp variables
     float lower, upper, step;	// vars for the values of the table
 	// adding initial values
@@ -17,4 +16,5 @@ main() {
 		printf("%3.0f %6.1f\n", fahr, celsius);	  // print the table 
 		fahr 	= fahr + step;					  // adding steps to the first value
 	}
+	return 0;
 }
