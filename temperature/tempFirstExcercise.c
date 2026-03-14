@@ -10,10 +10,11 @@ int main() {
 	upper = 300;	// upper limit
 	step  = 20;		// step size
 	
+	printf("|fahr | celsius|\n");
 	fahr = lower; 								  // setting the fahr values
 	while (fahr <= upper){						  // while loop till reach the upper value
 		celsius = (5.0/9.0)*(fahr-32.0);          // how to change from fahr to celsius
-		printf("%3.0f %6.1f\n", fahr, celsius);	  // print the table 
+		printf("|%3.0f  | %6.1f |\n", fahr, celsius);	  // print the table 
 		fahr 	= fahr + step;					  // adding steps to the first value
 	}
 	return 0;
